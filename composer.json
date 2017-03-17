@@ -1,6 +1,8 @@
 {
     "name": "ise/php-oauth2-client-beam",
     "description": "OAuth2 Client for Beam.pro using thephpleague/oauth2-client",
+    "license": "BSD-3-Clause",
+    "homepage": "https://github.com/internalsystemerror/php-oauth2-client-beam",
     "authors": [
         {
             "name": "ise",
