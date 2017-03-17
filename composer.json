@@ -16,7 +16,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
-        "Ise\\OAuth2\\Client\\": "src/"
+        "psr-4": {
+            "Ise\\OAuth2\\Client\\": "src/"
+        }
     },
     "autoload-dev": {
         "psr-4": {
