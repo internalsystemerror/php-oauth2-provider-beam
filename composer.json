@@ -1,0 +1,40 @@
+{
+    "name": "ise/oauth2-client-beam",
+    "description": "OAuth2 Client for Beam.pro using thephpleague/oauth2-client",
+    "authors": [
+        {
+            "name": "ise",
+            "email": "info@ise.me.uk"
+        }
+    ],
+    "require": {
+        "league/oauth2-client": "^2.0"
+    },
+    "require-dev": {
+        "ise/php-metapackage-development": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "Ise\\OAuth2\\Client\\": "src/"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IseTest\\OAuth2\\Client\\": "test/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "scripts": {
+        "test": "phpunit -c ./phpunit.xml.dist",
+        "cs-fix": "phpcbf",
+        "cs-check": [
+            "phpcs",
+            "phpmd ./src html --reportfile ./build/logs/phpmd.html --suffixes php,phtml ./phpmd.xml.dist",
+            "phpcpd . --exclude=build --exclude=data --exclude=vendor"
+        ]
+    }
+}
