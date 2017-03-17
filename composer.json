@@ -1,5 +1,5 @@
 {
-    "name": "ise/oauth2-client-beam",
+    "name": "ise/php-oauth2-client-beam",
     "description": "OAuth2 Client for Beam.pro using thephpleague/oauth2-client",
     "authors": [
         {
